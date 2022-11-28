@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace _3_writeline
+namespace _0x00_csharp_hello_world
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\"Programming is like building a multilingual puzzle");
+            Console.WriteLine("Hello World!");
         }
     }
 }
