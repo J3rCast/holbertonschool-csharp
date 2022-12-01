@@ -17,6 +17,10 @@ class MyStack
 
         if (aStack.Contains(search))
         {
+            for (int i = 0; i < aStack.Count; i++)
+            {
+                Console.WriteLine(aStack[i]);
+            }
             foreach (var item in copy)
             {
                 aStack.Pop();
