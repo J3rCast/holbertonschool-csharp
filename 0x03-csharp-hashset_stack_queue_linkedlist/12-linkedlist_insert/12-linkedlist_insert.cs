@@ -10,6 +10,12 @@ class LList
         LinkedListNode<int> myNode = new LinkedListNode<int>(n);
         LinkedListNode<int> node = myLList.First;
 
+        if (myNode.Value < node.Value)
+        {
+            myLList.AddBefore(node, n);
+            return myNode;
+        }
+
         for (i = 0; i < myLList.Count; i++)
         {
             if (node.Value > myNode.Value)
