@@ -6,10 +6,11 @@ class LList
     public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
 
+        int i = 0;
         LinkedListNode<int> myNode = new LinkedListNode<int>(n);
         LinkedListNode<int> node = myLList.First;
 
-        for (int i = 0; i < myLList.Count; i++)
+        for (i = 0; i < myLList.Count; i++)
         {
             if (node.Value > myNode.Value)
             {
@@ -17,7 +18,8 @@ class LList
                 break;
             }
 
-            node = node.Next;
+            if (i != myLList.Count - 1)
+                node = node.Next;
         }
 
         myLList.AddAfter(node, n);
