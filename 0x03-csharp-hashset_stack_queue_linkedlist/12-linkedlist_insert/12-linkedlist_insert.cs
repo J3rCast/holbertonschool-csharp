@@ -12,7 +12,7 @@ class LList
 
         if (myNode.Value < node.Value)
         {
-            myLList.AddBefore(node, n);
+            myLList.AddFirst(n);
             return myNode;
         }
 
