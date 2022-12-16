@@ -9,7 +9,7 @@ namespace Text.Tests
         [Test]
         public void CamelCase()
         {
-			string test = "helloMyNameIs";
+			string test = "HelloMyNameIs";
 			int result = Str.CamelCase(test);
             Assert.AreEqual(4, result);
         }
