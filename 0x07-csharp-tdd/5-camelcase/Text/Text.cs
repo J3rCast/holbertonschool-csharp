@@ -18,7 +18,7 @@ namespace Text
 
 			for (int i = 0; i < s.Length; i++)
 			{
-				if (s[i] > 'A' && s[i] < 'Z')
+				if (s[i] > 'A' && s[i] < 'Z' && i != 0)
 				{
 					words.Add(word);
 					word = "" + s[i];
