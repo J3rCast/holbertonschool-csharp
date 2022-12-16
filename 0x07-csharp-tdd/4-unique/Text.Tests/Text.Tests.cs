@@ -42,7 +42,7 @@ namespace Text.Tests
         public void UniqueLast()
         {
 			string test = "hihililia";
-			int result = Str.UniqueChar(test);
+			int result = Str.UniqueChar(null);
             Assert.AreEqual(8, result);
         }
     }
