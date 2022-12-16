@@ -23,6 +23,14 @@ namespace Text.Tests
         }
 
         [Test]
+        public void CamelCaseTwoWords()
+        {
+			string test = "helloMy";
+			int result = Str.CamelCase(test);
+            Assert.AreEqual(2, result);
+		}
+
+        [Test]
         public void CamelCaseEmptyString()
         {
 			string test = "";
