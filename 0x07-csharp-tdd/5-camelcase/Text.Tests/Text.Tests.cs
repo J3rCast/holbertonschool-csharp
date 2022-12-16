@@ -51,6 +51,6 @@ namespace Text.Tests
 			string test = "helloIAmHere";
 			int result = Str.CamelCase(test);
             Assert.AreEqual(4, result);
-        
+		}
     }
 }
