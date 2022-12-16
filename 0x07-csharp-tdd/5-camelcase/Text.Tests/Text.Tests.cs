@@ -44,5 +44,13 @@ namespace Text.Tests
 			int result = Str.CamelCase(null);
             Assert.AreEqual(0, result);
         }
+
+        [Test]
+        public void CamelCaseTwoFollowed()
+        {
+			string test = "helloIAmHere";
+			int result = Str.CamelCase(test);
+            Assert.AreEqual(4, result);
+        
     }
 }
