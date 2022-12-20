@@ -15,13 +15,13 @@ class Obj
 		IEnumerable<MethodInfo> mList = t.DeclaredMethods;
 
 		Console.WriteLine(myObj.GetType().Name + " Properties:");
-		Console.WriteLine(myObj.GetType().Name + " Methods:");
 
 		foreach (PropertyInfo p in pList)
 		{
 			Console.WriteLine(p.Name);
 		}
 
+		Console.WriteLine(myObj.GetType().Name + " Methods:");
 		foreach (MethodInfo m in mList)
 		{
 			Console.WriteLine(m.Name);
