@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _1_instance
+/// <summary>Contains multiple methods for Obj.</summary>
+class Obj
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	/// <summary>Check if is instace of a class.</summary>
+	/// <returns>True if is instance.</returns>
+	public static bool IsInstanceOfArray(object obj)
+	{
+		if (obj is Array)
+			return true;
+		return false;
+	}
 }
