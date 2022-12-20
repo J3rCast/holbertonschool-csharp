@@ -1,14 +1,14 @@
 ﻿using System;
 
-/// <summary>Contains multiple methods for objects </summary>
+/// <sumary> contains multiple method for objects </sumary>
 class Obj
 {
-	/// <summary>check if obj is int. </summary>
-	/// <returns>true if obj is int. </returns>
+    /// <sumary> check if an object is an int or no </sumary>
+    /// <return> true if <paramref name="obj"/> is int </return>
     public static bool IsOfTypeInt(object obj)
     {
-		if (obj is int)
-			return true;
-		return false;
-	}
+        if (obj is int)
+            return true;
+        return false;
+    }
 }
