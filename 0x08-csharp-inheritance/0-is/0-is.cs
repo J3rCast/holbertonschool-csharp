@@ -4,7 +4,7 @@
 class Obj
 {
 	/// <summary>check if <see cref="object" /> is int. </summary>
-	/// <returns>true if <paramref name="obj" /> is int. </returns>
+	/// <returns>true if obj is int. </returns>
     public static bool IsOfTypeInt(object obj)
     {
 		if (obj is int)
