@@ -10,5 +10,5 @@ class Obj
 		if (obj is int)
 			return true;
 		return false;
-    }
+	}
 }
