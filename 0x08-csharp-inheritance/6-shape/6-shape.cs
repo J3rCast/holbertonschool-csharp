@@ -1,7 +1,5 @@
 ﻿using System;
 
-using System;
-
 /// <summary>This class contains multiple methods related to shape.</summary>
 class Shape
 {
