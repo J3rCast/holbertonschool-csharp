@@ -1,8 +1,15 @@
 ﻿using System;
 
-
+/// <summary>
+/// This class contains multiple methods for vectors.
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// This method allows to find the magnitud of a 2D or 3D vector.
+    /// </summary>
+    /// <param name="vector">Vector to find the magnitud</param>
+    /// <returns>Magnitud of the vector.</returns>
     public static double Magnitude(double[] vector)
     {
         if (vector.Length == 2)
