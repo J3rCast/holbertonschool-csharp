@@ -12,7 +12,7 @@ class VectorMath
         
         double[] res = vector1;
 
-        if ((vector1.Length == 2 || vector1.Length == 3) && (vector2.Length == 3 || vector2.Length))
+        if ((vector1.Length == 2 || vector1.Length == 3) && (vector2.Length == 2 || vector2.Length == 3))
         {
             for (int i = 0 ; i < vector1.Length ; i++)
                 res[i] = vector1[i] + vector2[i];
