@@ -14,10 +14,8 @@ class VectorMath
     public static double[] Add(double[] vector1, double[] vector2)
     {
         double[] fail = {-1};
-        if (vector1.Length != vector2.Length) 
+        if (vector1.Length != vector2.Length)
             return fail;
-        
-        
 
         if ((vector1.Length == 2 || vector1.Length == 3) && (vector2.Length == 2 || vector2.Length == 3))
         {
