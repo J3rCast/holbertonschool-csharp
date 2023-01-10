@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// This class contains multiple methods for vectors.
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// This method adds two vectors.
+    /// </summary>
+    /// <param name="vector1">first vector</param>
+    /// <param name="vector2">Second vector</param>
+    /// <returns>new vector with the sums.</returns>
     public static double[] Add(double[] vector1, double[] vector2)
     {
         double[] fail = {-1};
