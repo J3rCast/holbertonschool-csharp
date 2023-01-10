@@ -4,11 +4,9 @@ class VectorMath
 {
     public static double[] Add(double[] vector1, double[] vector2)
     {
-        if (vector1.Length != vector2.Length)
-        {
-            double[] fail = {-1};
+        double[] fail = {-1};
+        if (vector1.Length != vector2.Length) 
             return fail;
-        }
         
         double[] res = vector1;
 
@@ -16,7 +14,9 @@ class VectorMath
         {
             for (int i = 0 ; i < vector1.Length ; i++)
                 res[i] = vector1[i] + vector2[i];
+            
+            return res;
         }
-        return res;
+        return fail;
     }
 }
