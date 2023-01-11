@@ -6,6 +6,7 @@ class MatrixMath
     {
 		double[,] fail = {{-1}};
 		
+		// check if both matrix have the same size
         if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1))
 			return fail;
 
