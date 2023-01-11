@@ -26,4 +26,3 @@ class VectorMath
         return -1;
     }
 }
-
