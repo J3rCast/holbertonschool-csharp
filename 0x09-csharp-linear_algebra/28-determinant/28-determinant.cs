@@ -26,6 +26,7 @@ class MatrixMath
 		}
 		return res;
 	}
+
     public static double Determinant(double[,] matrix)
     {
 		double res = 0;
@@ -35,7 +36,7 @@ class MatrixMath
 			res = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
 			return res;
 		}
-		if (matrix.GetLength(0) == 3 && matrix.GetLength(1) == 3)
+		if (matrix.GetLength(0) == 3 && matrix.GetLength(1) == 3 && matrix.GetLength(2) == 3)
 		{
 			double[,] res_matrix = new_matrix(matrix);
 
