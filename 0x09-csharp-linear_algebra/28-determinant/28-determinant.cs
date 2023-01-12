@@ -30,7 +30,6 @@ class MatrixMath
     public static double Determinant(double[,] matrix)
     {
 		double res = 0;
-		Console.WriteLine(matrix.GetLength(2));
 
         if (matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
 		{
