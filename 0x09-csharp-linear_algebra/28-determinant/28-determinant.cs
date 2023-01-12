@@ -30,13 +30,14 @@ class MatrixMath
     public static double Determinant(double[,] matrix)
     {
 		double res = 0;
+		Console.WriteLine(matrix.GetLength(2));
 
         if (matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
 		{
 			res = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
 			return res;
 		}
-		if (matrix.GetLength(0) == 3 && matrix.GetLength(1) == 3 && matrix.GetLength(2) == 3)
+		if (matrix.GetLength(0) == 3 && matrix.GetLength(1) == 3)
 		{
 			double[,] res_matrix = new_matrix(matrix);
 
@@ -48,7 +49,7 @@ class MatrixMath
 			second += res_matrix[1, 2] * res_matrix[2, 1] * res_matrix[3, 0];
 			second += res_matrix[2, 2] * res_matrix[3, 1] * res_matrix[4, 0];
 			res = first - second;
-			return res;
+			return Math.Round(res, 2);
 		}
 		return -1;
     }
