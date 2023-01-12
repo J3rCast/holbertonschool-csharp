@@ -8,6 +8,8 @@ class MatrixMath
 
 		if (matrix.Length != 4 || (direction != 'x' && direction != 'y'))
 			return fail;
+		if (matrix.GetLength(0) != matrix.GetLength(1))
+			return fail;
 
 		double[,] res = new double[2, 2];
 
