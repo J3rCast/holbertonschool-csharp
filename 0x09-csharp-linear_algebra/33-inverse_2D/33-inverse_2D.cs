@@ -35,7 +35,7 @@ class MatrixMath
 			return fail;
 
 		double[,] transposed = {{matrix[1, 1], -1 * matrix[0, 1]}, {-1 * matrix[1, 0], matrix[0, 0]}};
-		double[,] res = new double[3, 3];
+		double[,] res = new double[2, 2];
 
 		for (int i = 0; i < 2; i++)
 		{
